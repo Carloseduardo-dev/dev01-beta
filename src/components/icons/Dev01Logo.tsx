@@ -9,7 +9,14 @@ export const Dev01Logo = ({ className = "" }: { className?: string }) => (
     className={className}
   >
     <g fill="none" fillRule="evenodd">
-      <rect x="0" y="8" width="72" height="56" rx="12" className="fill-foreground" />
+      <rect
+        x="0"
+        y="8"
+        width="72"
+        height="56"
+        rx="12"
+        className="fill-foreground"
+      />
       <path
         d="M24 26 L38 36 L24 46"
         stroke="hsl(147, 100%, 45%)"
@@ -17,7 +24,14 @@ export const Dev01Logo = ({ className = "" }: { className?: string }) => (
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <rect x="44" y="44" width="20" height="5" rx="2" fill="hsl(147, 100%, 45%)" />
+      <rect
+        x="44"
+        y="44"
+        width="20"
+        height="5"
+        rx="2"
+        fill="hsl(147, 100%, 45%)"
+      />
       <text
         x="92"
         y="48"
@@ -52,7 +66,14 @@ export const Dev01Symbol = ({ className = "" }: { className?: string }) => (
       strokeLinejoin="round"
     >
       <path d="M12 16 L26 28 L12 40" className="stroke-primary" />
-      <rect x="32" y="36" width="10" height="4" rx="2" className="fill-primary" />
+      <rect
+        x="32"
+        y="36"
+        width="10"
+        height="4"
+        rx="2"
+        className="fill-primary"
+      />
     </g>
   </svg>
 );
