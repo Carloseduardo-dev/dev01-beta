@@ -38,7 +38,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
             <Button variant="hero" size="sm" className="hidden sm:flex" asChild>
-              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5521999045177" target="_blank" rel="noopener noreferrer">
                 Falar no WhatsApp
               </a>
             </Button>

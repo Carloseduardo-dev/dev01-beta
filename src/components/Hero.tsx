@@ -38,7 +38,7 @@ export function Hero() {
           <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="lg" asChild>
               <a
-                href="https://wa.me/5500000000000"
+                href="https://wa.me/5521999045177"
                 target="_blank"
                 rel="noopener noreferrer"
               >
