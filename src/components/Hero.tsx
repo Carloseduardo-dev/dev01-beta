@@ -23,16 +23,16 @@ export function Hero() {
           </div>
 
           {/* Main Title */}
-          <h1 className="animate-fade-up-delay-1 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6">
+          <h1 className="animate-fade-up-delay-1 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6 hover:text-[#21e378]">
             Automação, performance e{" "}
             <span className="text-gradient">presença digital</span> para elevar
             o seu negócio.
           </h1>
 
           {/* Subtitle */}
-          <p className="animate-fade-up-delay-2 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
+          {/* <p className="animate-fade-up-delay-2 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
             Enquanto você cuida do seu negócio, a Dev01 cuida da tecnologia.
-          </p>
+          </p> */}
 
           {/* CTAs */}
           <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4">

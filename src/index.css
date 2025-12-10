@@ -2,74 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================
+   VARIÁVEIS DE CORES
+========================= */
 @layer base {
   :root {
-    /* ====== PALETA LIGHT ====== */
-    --background: 0 0% 99%;
-    --foreground: 224 25% 10%;
+    /* ====== LIGHT MODE ====== */
+    --background: 0 0% 100%;        /* branco */
+    --foreground: 210 10% 20%;      /* cinza escuro */
 
-    --card: 0 0% 100%;
-    --card-foreground: 224 25% 10%;
+    --card: 0 0% 98%;               /* off-white */
+    --card-foreground: 210 10% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 224 25% 10%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 210 10% 20%;
 
-    /* Azul Alura */
-    --primary: 202 100% 50%;
+    --primary: 220 15% 50%;         /* azul discreto */
     --primary-foreground: 0 0% 100%;
 
-    /* Verde acqua suave */
-    --accent: 174 100% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 90%;             /* cinza suave */
+    --accent-foreground: 210 10% 20%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 224 25% 20%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 210 10% 30%;
 
-    --muted: 0 0% 94%;
-    --muted-foreground: 224 25% 50%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 210 10% 50%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 80% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 85%;
     --input: 0 0% 85%;
-    --ring: 202 100% 50%;
+    --ring: 220 15% 50%;
 
     --radius: 0.75rem;
   }
 
   .dark {
-    /* ====== PALETA DARK ====== */
-    --background: 222 26% 9%;
-    --foreground: 0 0% 95%;
+    /* ====== DARK MODE ====== */
+    --background: 210 15% 12%;     /* cinza escuro */
+    --foreground: 0 0% 95%;        /* branco suave */
 
-    --card: 222 24% 14%;
+    --card: 210 15% 18%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 222 24% 14%;
+    --popover: 210 15% 18%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 202 100% 62%; /* azul mais vivo no dark */
-    --primary-foreground: 222 26% 9%;
+    --primary: 220 15% 70%;
+    --primary-foreground: 210 15% 12%;
 
-    --accent: 174 100% 52%;
-    --accent-foreground: 222 26% 9%;
+    --accent: 210 15% 25%;
+    --accent-foreground: 0 0% 95%;
 
-    --secondary: 222 24% 18%;
+    --secondary: 210 15% 20%;
     --secondary-foreground: 0 0% 95%;
 
-    --muted: 222 24% 18%;
+    --muted: 210 15% 20%;
     --muted-foreground: 0 0% 55%;
 
-    --destructive: 0 62% 45%;
+    --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 222 20% 20%;
-    --input: 222 20% 20%;
-    --ring: 202 100% 62%;
+    --border: 210 15% 25%;
+    --input: 210 15% 25%;
+    --ring: 220 15% 70%;
   }
 }
 
+/* =========================
+   ESTILOS BASE
+========================= */
 @layer base {
   * {
     @apply border-border transition-colors duration-300;
@@ -82,17 +86,24 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'ui-sans-serif', monospace;
+  }
 }
 
+/* =========================
+   UTILITÁRIOS CUSTOM
+========================= */
 @layer utilities {
-  /* Gradiente azul aqua estilo Alura */
+  /* Gradiente azul-accent minimalista */
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary/80;
   }
 
   /* Fade premium */
   .animate-fade-up {
-    animation: fade-up 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: fade-up 0.55s cubic-bezier(0.16,1,0.3,1) forwards;
     opacity: 0;
   }
 
@@ -110,30 +121,23 @@
     @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10;
   }
 
+  /* Container de seção */
   .section-container {
     @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
 
-/* ====== Animações ====== */
+/* =========================
+   ANIMAÇÕES
+========================= */
 @keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(22px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 .animate-float {

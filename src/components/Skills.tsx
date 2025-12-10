@@ -7,7 +7,6 @@ const skills = [
   "Chatbots",
   "Firebase",
   "APIs",
-  "CMS",
   "Integrações complexas",
 ];
 
@@ -19,7 +18,7 @@ export function Skills() {
           <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
             Habilidades
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold">
+          <h2 className="text-3xl sm:text-4xl font-bold hover:text-[#21e378]">
             Tecnologias que dominamos
           </h2>
         </div>
@@ -28,7 +27,7 @@ export function Skills() {
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="px-5 py-2.5 rounded-full bg-secondary border border-border text-sm font-medium hover:bg-primary/10 hover:border-primary/30 hover:text-primary transition-all duration-300 cursor-default"
+              className="px-5 py-2.5 rounded-full bg-secondary border border-border text-sm font-medium hover:bg-primary/10 hover:border-primary/30 hover:text-primary transition-all duration-300 cursor-default hover:text-[#21e378]"
             >
               {skill}
             </span>

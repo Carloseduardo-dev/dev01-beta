@@ -32,7 +32,7 @@ export function Services() {
           <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
             Nossos Serviços
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 hover:text-[#21e378]">
             Soluções completas para seu{" "}
             <span className="text-gradient">crescimento digital</span>
           </h2>
@@ -45,8 +45,7 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group glass-card rounded-2xl p-8 hover-lift cursor-pointer"
-            >
+            className="hover:text-[#21e378] animate-pulse">
               <div className="flex items-start gap-5">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
                   <service.icon className="w-6 h-6 text-primary" />

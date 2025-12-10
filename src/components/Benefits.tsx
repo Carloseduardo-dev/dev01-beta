@@ -32,7 +32,7 @@ export function Benefits() {
           <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
             Vantagens
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 hover:text-[#21e378]">
             Por que escolher a{" "}
             <span className="text-gradient">Dev01</span>?
           </h2>
@@ -45,7 +45,7 @@ export function Benefits() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="glass-card rounded-xl p-5 text-center hover-lift group"
+              className="glass-card rounded-xl p-5 text-center hover-lift group hover:text-[#21e378] "
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors duration-300">
                 <benefit.icon className="w-6 h-6 text-primary" />
@@ -57,7 +57,7 @@ export function Benefits() {
 
         <div className="mt-16 text-center">
           <div className="inline-block glass-card rounded-2xl px-8 py-6 max-w-2xl">
-            <p className="text-xl sm:text-2xl font-medium text-foreground">
+            <p className="text-xl sm:text-2xl font-medium text-foreground hover:text-[#21e378]">
               "Tecnologia que trabalha por você, enquanto sua empresa{" "}
               <span className="text-gradient">cresce</span>."
             </p>

@@ -7,17 +7,17 @@ export function About() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
             <Dev01Symbol className="text-primary" />
-            <span className="text-sm font-medium text-primary uppercase tracking-wider">Sobre a Dev01</span>
+            <span className="text-sm font-medium text-primary uppercase tracking-wider">O que fazemos*</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 leading-tight underline hover:text-[#21e378]">
             Tecnologia que transforma{" "}
             <span className="text-gradient">ideias em resultados</span>
           </h2>
 
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              A <strong className="text-foreground">Dev01</strong> é uma empresa de tecnologia especializada em 
+              A <strong className="text-foreground underline text-[#21e378]">Dev01</strong> é uma empresa de tecnologia especializada em 
               automações inteligentes, desenvolvimento de agentes de IA e criação de soluções digitais modernas 
               para empresas que buscam escalar suas operações.
             </p>
@@ -38,9 +38,9 @@ export function About() {
               { title: "Eficiência", desc: "Processos otimizados para máxima performance" },
               { title: "Resultados", desc: "Foco em métricas e crescimento real" },
             ].map((item, index) => (
-              <div key={index} className="glass-card rounded-xl p-6 hover-lift">
+              <div key={index} className="glass-card rounded-xl p-6 hover-lift hover:text-[#21e378]">
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
+                <p className="text-sm text-muted-foreground hover:text-[#21cddd]">{item.desc}</p>
               </div>
             ))}
           </div>
